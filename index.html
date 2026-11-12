@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>隐私政策 - 函数可视化生成器</title>
+<title>技术支持 - 函数可视化生成器 Function Visualizer</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -15,7 +15,7 @@
   }
   .card {
     max-width: 760px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     background: #fff;
     border: 1px solid #d0d7de;
     border-radius: 8px;
@@ -24,46 +24,105 @@
   h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
   .meta { color: #57606a; font-size: 13px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #eaeef2; }
   h2 { font-size: 18px; font-weight: 600; margin: 26px 0 10px; }
+  h3 { font-size: 15px; font-weight: 600; margin: 18px 0 6px; }
   p, li { font-size: 15px; color: #3a3f44; }
   ul { padding-left: 22px; margin: 8px 0; }
   li { margin: 4px 0; }
+  code { background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 4px; padding: 1px 5px; font-size: 13px; }
   .highlight { background: #f0f6ff; border-left: 3px solid #0969da; padding: 12px 16px; border-radius: 4px; margin: 12px 0; }
   strong { color: #1f2328; }
+  a { color: #0969da; text-decoration: none; }
+  a:hover { text-decoration: underline; }
   .contact { margin-top: 20px; padding-top: 16px; border-top: 1px solid #eaeef2; }
+  .lang { text-align: right; font-size: 13px; }
+  hr { border: none; border-top: 1px solid #eaeef2; margin: 32px 0; }
 </style>
 </head>
 <body>
 <div class="card">
-  <h1>「函数可视化生成器」隐私政策</h1>
-  <div class="meta">更新日期：2026 年 10 月 27 日</div>
+  <div class="lang"><a href="#en">English</a></div>
+  <h1>「函数可视化生成器」技术支持</h1>
+  <div class="meta">Function Visualizer · Support · 更新日期：2026 年 11 月 12 日</div>
 
-  <p>「函数可视化生成器」（以下简称“本应用”）由开发者独立开发并发布。本应用尊重并保护您的隐私。</p>
+  <p>「函数可视化生成器」（Function Visualizer）是一款完全离线的数学绘图工具，支持一元函数、极坐标、参数曲线与三维曲面四种模式，所有计算都在你的设备本地完成。</p>
+  <div class="highlight"><strong>本应用完全免费：没有 App 内购买项目、没有订阅、没有广告，也没有试用期限或付费墙，所有功能对所有用户开放。</strong></div>
 
-  <h2>一、数据收集</h2>
-  <div class="highlight"><strong>本应用不收集任何个人数据。</strong></div>
+  <h2>常见问题</h2>
+
+  <h3>1. 绘图没有出现 / 曲线是空白的</h3>
   <ul>
-    <li>不采集、不上传、不存储您的函数表达式、绘图结果或其他任何输入内容；</li>
-    <li>无账号体系，无需注册或登录；</li>
-    <li>无广告、无第三方统计或分析组件、无任何形式的追踪；</li>
-    <li>全部计算与绘图均在您的设备本地完成，不进行任何网络数据传输。</li>
+    <li>请确认表达式使用的是应用支持的写法，例如 <code>sin(x)</code>、<code>x^2</code>、<code>1/x</code>；</li>
+    <li>检查当前定义域是否把曲线排除在外，尝试把定义域扩大到 -10 至 10；</li>
+    <li>三维曲面需要 x、y 两个自变量，例如 <code>sin(x)*cos(y)</code>。</li>
   </ul>
 
-  <h2>二、权限说明</h2>
-  <p>本应用仅使用一项系统权限：</p>
+  <h3>2. 交点为什么没有标注出来</h3>
   <ul>
-    <li><strong>相册写入权限（保存到相册）</strong>：仅在您主动点击应用内“截屏保存”按钮时，将当前函数图像写入您的相册。应用不会读取或修改相册中的其他内容。</li>
+    <li>交点只在「一元函数」模式下、且图中确实有两条及以上曲线时才会求解；</li>
+    <li>切点（重根）与超出当前定义域的交点不会被标注。</li>
   </ul>
 
-  <h2>三、数据共享</h2>
-  <p>由于本应用不收集任何数据，因此不存在向任何第三方共享、出售或转让数据的行为。</p>
+  <h3>3. 截图保存在哪里</h3>
+  <ul>
+    <li>点击「截屏保存」后，图像会写入系统「照片」App；首次使用时需要允许相册写入权限；</li>
+    <li>如果误点了「不允许」，可到 设置 → 隐私与安全性 → 照片 → 函数可视化生成器 中重新开启。</li>
+  </ul>
 
-  <h2>四、隐私政策更新</h2>
-  <p>若本政策发生变更，我们将在本页面发布更新版本，并更新页面顶部的“更新日期”。</p>
+  <h3>4. 参数滑块 a / b / c / d 怎么用</h3>
+  <p>在函数表达式中直接写 <code>a</code>、<code>b</code>、<code>c</code>、<code>d</code>（例如 <code>a*sin(b*x)</code>），拖动控制面板下方的滑块即可实时改变参数并观察曲线变化。</p>
 
+  <h3>5. 数据与隐私</h3>
+  <p>应用不收集任何个人数据，不联网、无统计组件。详细说明请见 <a href="privacy.html">隐私政策</a>。</p>
+
+  <h2>反馈与联系</h2>
+  <p>遇到问题、想提需求，或希望支持更多语言，欢迎通过邮箱联系开发者：</p>
   <div class="contact">
-    <h2>五、联系我们</h2>
-    <p>如有任何关于隐私的疑问，请通过以下邮箱联系我们：</p>
-    <p><strong>1132387609@qq.com</strong></p>
+    <p><strong>thoexxr@hotmail.com</strong></p>
+    <p>也可在 GitHub 提交 issue：<a href="https://github.com/thoexxr/FunctionVisualizer/issues">github.com/thoexxr/FunctionVisualizer/issues</a></p>
+    <p><a href="privacy.html">隐私政策 / Privacy Policy</a></p>
+  </div>
+
+  <hr>
+
+  <h1 id="en">Function Visualizer — Support</h1>
+  <div class="meta">Updated November 12, 2026</div>
+
+  <p>Function Visualizer is a fully offline graphing tool for iPhone and iPad. It plots functions y=f(x), polar curves, parametric curves and 3D surfaces, and every calculation runs locally on your device.</p>
+  <div class="highlight"><strong>The app is completely free: there is no in-app purchase, no subscription, no advertising, no trial limit and no paywall. All features are available to everyone.</strong></div>
+
+  <h2>Frequently asked questions</h2>
+
+  <h3>1. Nothing is plotted / the canvas is empty</h3>
+  <ul>
+    <li>Check the expression syntax the app accepts, for example <code>sin(x)</code>, <code>x^2</code> or <code>1/x</code>;</li>
+    <li>Widen the domain of the function, e.g. from -10 to 10, in case the curve falls outside the current range;</li>
+    <li>3D surfaces need both variables, for example <code>sin(x)*cos(y)</code>.</li>
+  </ul>
+
+  <h3>2. Why are no intersections labeled</h3>
+  <ul>
+    <li>Intersections are solved only in the "functions" mode, when at least two curves are visible;</li>
+    <li>Tangency points and intersections outside the current domain are not labeled.</li>
+  </ul>
+
+  <h3>3. Where are my screenshots saved</h3>
+  <ul>
+    <li>Tapping the save button writes the plot into the system Photos app; the first time you do this iOS asks for add-only photo permission;</li>
+    <li>If you tapped "Don't allow", re-enable it in Settings → Privacy &amp; Security → Photos → Function Visualizer.</li>
+  </ul>
+
+  <h3>4. How do the a / b / c / d parameter sliders work</h3>
+  <p>Type <code>a</code>, <code>b</code>, <code>c</code> or <code>d</code> directly into an expression, for example <code>a*sin(b*x)</code>, then drag the sliders on the control panel to update the curve in real time.</p>
+
+  <h3>5. Privacy</h3>
+  <p>The app collects no personal data and does not access the network. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+  <h2>Contact</h2>
+  <p>For bug reports, feature requests or localization help, please email the developer:</p>
+  <div class="contact">
+    <p><strong>thoexxr@hotmail.com</strong></p>
+    <p>Issues are also welcome on GitHub: <a href="https://github.com/thoexxr/FunctionVisualizer/issues">github.com/thoexxr/FunctionVisualizer/issues</a></p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
   </div>
 </div>
 </body>
